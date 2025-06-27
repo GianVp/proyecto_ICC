@@ -1,57 +1,162 @@
-<!DOCTYPE html> 
-<html lang="es"> 
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta name="google-site-verification" content="ZkUiKJK9RkQjfG35lqiGa89m793rT3KTmeSHL27YZz8" />
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Giancarlo Villachica Cuentas - Trabajo Final</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 25px;
+            background-color: #f5f5f5;
+            color: #333;
+        
+            background-image: url('fondo.png');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+
         }
+        
         h1 {
-            color: #b93329;
+            color: #ff1e00;
             text-align: center;
-        }
-        h2 {
-            color: #b93329;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
             border-bottom: 2px solid #db3434;
-            padding-bottom: 5px;
         }
+        
+        h2 {
+            color: #db3434;
+            margin-top: 30px;
+        }
+        
         a {
-            color: #294fb9;
+            color: #b92929;
             text-decoration: none;
+            font-weight: 500;
         }
-        img {
-            max-width: 150px;
-            height: auto;
-            margin: 15px;
-            display: block;
+        
+        a:hover {
+            text-decoration: underline;
+            color: #761a1a;
         }
+        
+        .box {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .columnadoble {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .listacursos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .curso {
+            background: #fce8e8;
+            padding: 10px 15px;
+            border-radius: 5px;
+            flex: 1 0 calc(33% - 15px);
+        }
+
+        
         .logo-container {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            gap: 30px;
+            margin: 30px 0;
         }
+        
+        .logo-container img {
+            max-width: 180px;
+            height: auto;
+            transition: transform 0.3s;
+        }
+        
+        .logo-container img:hover {
+            transform: scale(1.05);
+        }
+        
     </style>
 </head>
 <body>
     <h1>Trabajo Final de Introducción a Ciencias de la Computación</h1>
-    <h2>Descripción Personal</h2>
-    <p>Mi nombre es Giancarlo Villachica Cuentas, actualmente estoy estudiando en la <a href="https://ucsp.edu.pe/" target="_blank">
-        Universidad Católica San Pablo (UCSP)</a>, específicamente 
-        la carrera de <a href="https://cs.ucsp.edu.pe/pregrado/" target="_blank">
-            Ciencias de la Computación</a> en el tercer semestre.</p>
+    <div class="box">
+        <h2>Descripción Personal</h2>
+        <p>Mi nombre es Giancarlo Villachica Cuentas, actualmente estoy estudiando en la <a href="https://ucsp.edu.pe/" target="_blank">Universidad Católica San Pablo (UCSP)</a>, específicamente la carrera de <a href="https://cs.ucsp.edu.pe/pregrado/" target="_blank">Ciencias de la Computación</a> en el tercer semestre.</p>
+    </div>
     
-    <h2>Educación</h2>
-    <ul>
-        <li><strong>COLEGIO:</strong> <a href="https://www.lordbyron.edu.pe/" target="_blank">Lord Byron</a> <strong>educación inicial-primaria-secundaria hasta 2023</strong></li>
-        <li><strong>UNIVERSIDAD:</strong> <a href="https://ucsp.edu.pe/" target="_blank">Universidad Católica San Pablo</a> - <a href="https://cs.ucsp.edu.pe/pregrado/" target="_blank">Ciencias de la Computación</a> <strong>educación superior - actualidad</strong></li>
-    </ul>
+    <div class="box">
+        <h2>Educación</h2>
+        <ul>
+            <li><strong>COLEGIO:</strong> <a href="https://www.lordbyron.edu.pe/" target="_blank">Lord Byron</a> <strong>educación inicial-primaria-secundaria hasta 2023</strong></li>
+            <li><strong>UNIVERSIDAD:</strong> <a href="https://ucsp.edu.pe/" target="_blank">Universidad Católica San Pablo</a> - <a href="https://cs.ucsp.edu.pe/pregrado/" target="_blank">Ciencias de la Computación</a> <strong>educación superior - actualidad</strong></li>
+        </ul>
+    </div>
+    
+    <div class="box">
+        <h2>Cursos</h2>
+        <div class="listacursos">
+            <div class="curso">Metodolofia del Estudio - Nilda Chavez de Tapia/Renzo Medina Zeballos</div>
+            <div class="curso">Estructuras Discretas II - Luis Diaz Basurco</div>
+            <div class="curso">Introduccion de Ciencias de la Computación - Ernesto Cuadros-Vargas</div>
+            <div class="curso">Álgebra Abstracta - Luis Diaz Basurco</div>
+            <div class="curso">Cálculo I - Adela Cano Mamamni</div>
+            <div class="curso">Apreciacion Musical - Gonzalo Maldonado Chauca</div>
+        </div>
+    </div>
+    
+    <div class="box">
+        <h2>Compañeros</h2>
+        <div class="columnadoble">
+            <div>
+                <p>Anghelina Quispe</p>
+                <p>Joaquin Huamani Arroyo</p>
+                <p>Pedro Fabián Zahir Flores Gutiérrez</p>
+                <p>Gabriel Maura Martinez</p>
+                <p>Angueli Briyith Calderon Ccama</p>
+                <p>José Alejandro Valdivia Juárez</p>
+            </div>
+            <div>
+                <p><a href="https://anghelyquis.github.io/Anghely-Quis.github.io/">Pagina</a> / <a href="https://www.linkedin.com/in/anghelina-soledad-quispe-tinta-8517a2331/" target="_blank">Linkedin</a></p>
+                <p><a href="https://joaquin200712.github.io/" target="_blank">Pagina</a> / <a href="https://www.linkedin.com/in/joaquin-carlos-huamani-arroyo-409088358" target="_blank">Linkedin</a></p>
+                <p><a href="https://pedro191102.github.io/Pedro-Fabian-Zahir-Flores-Gutierrez/" target="_blank">Pagina</a> / <a href="https://www.linkedin.com/in/pedro-f-z-flores-guti%C3%A9rrez-415753365/" target="_blank">Linkedin</a></p>
+                <p><a href="https://gabomaura.neocities.org/" target="_blank">Pagina</a>
+                <p><a href="https://angueli08.github.io/Angueli-Briyith-Calderon-Ccama/" target="_blank">Pagina</a>
+                <p><a href="https://jano2112.github.io/Jose-Alejandro-Valdivia-Juarez/" target="_blank">Pagina</a> / <a href="https://www.linkedin.com/in/jos%C3%A9-valdivia-ju%C3%A1rez-b60b08357/" target="_blank">Linkedin</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>Contacto</h2>
+            <div class="columnadoble">
+                <div>
+                <p><strong>Email Personal:</strong> giancarlovillachica2006@gmail.com </p>
+                <p><strong>Email Institucional:</strong> giancarlo.villachica@ucsp.edu.pe</p>
+            </div>
+            <div>
+                <p><strong>GitHub:</strong> <a href="https://github.com/GianVp" target="_blank">https://github.com/GianVp</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/giancarlo-villachica-931067358/" target="_blank">https://www.linkedin.com/in/giancarlo-villachica-931067358/</a></p>
+            </div>
+        </div>
+    </div>
 
     <div class="logo-container">
         <a href="https://cs.ucsp.edu.pe/pregrado/"><img src="cc.png" alt="Logo Ciencias de la Computación UCSP"></a>
